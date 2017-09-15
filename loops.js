@@ -1,4 +1,4 @@
-function loopOne(countdown){
+function loopOne(time){
 
   let counter = 30;
   while(counter > 0){
@@ -17,7 +17,12 @@ function loopTwo(number,power){
 
 let sum = 0;
 
-for(let number = 0; number < power; number = ++){}
+for(let p=0; p<=power; p=p+1){
+
+    sum = number^p
+
+    console.log(sum);
+}
 }
 
 function loopThree(){
