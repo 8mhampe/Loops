@@ -1,13 +1,12 @@
 function loopOne(time){
 
-  let counter = 30;
-  while(counter > 0){
-    if(counter % 5 == 0)
-    console.log("AHHHHH" +counter+ "seconds left");
+  while(time > 0){
+    if(time % 5 == 0)
+    console.log("AHHHHH" +time+ "seconds left");
 
   else{
-    console.log(counter+ "seconds left");}
-    counter = counter - 1;
+    console.log(time+ "seconds left");}
+    time= time - 1;
 }
 console.log("Done Son!")
 
@@ -18,14 +17,21 @@ function loopTwo(number,power){
 let sum = 0;
 
 for(let p=0; p<=power; p=p+1){
-
-    sum = number^p
+    sum = sum+ Math.pow(number,p);
 
     console.log(sum);
 }
+return(sum);
 }
 
-function loopThree(){
+function loopThree(symbol, number){
+    let lasttime="";
+
+    for (let s = 0; s<=number; s++) {
+        lasttime=lasttime+symbol;
+
+        console.log(lasttime);
+    }
 
 
 }
